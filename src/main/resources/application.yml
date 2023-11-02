@@ -1,0 +1,17 @@
+server:
+  port:  7000
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          - auth-client:
+              authorization-grant-type: "client_credentials"
+              client-id: "auth-client"
+              client-secret: "secret"
+              scope: "internal"
+              client-name: "auth-client"
+        provider:
+          auth-client:
+            token-uri: "http://127.0.0.1:7000"
+

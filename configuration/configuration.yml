@@ -1,0 +1,6 @@
+auth:
+  port: 7000
+  ip: 127.0.0.1
+resource:
+  port: 7024
+  ip: 127.0.0.1
